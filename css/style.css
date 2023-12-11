@@ -1,0 +1,335 @@
+html {
+  font-size: 0.7320644217vw;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 2.857142857vw;
+  }
+}
+@media screen and (min-width: 1367px) {
+  html {
+    font-size: 67.5%;
+  }
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.l-container-fluid {
+  width: 75.10980966vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .l-container-fluid {
+    width: 85vw;
+  }
+}
+
+.l-container {
+  width: 60.46852123vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .l-container {
+    width: 85vw;
+  }
+}
+
+.lineart {
+  margin: 5rem 0;
+}
+
+/* header
+---------------------------------------------------------------- */
+.l-header {
+  position: fixed;
+  width: 100%;
+  height: 10rem;
+  background-color: #c21902;
+  z-index: 1;
+  color: white;
+}
+.l-header--logo img {
+  height: 8rem;
+}
+.l-header__nav {
+  width: 95%;
+  height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header__nav__btn {
+  width: 4rem;
+  height: 3rem;
+  display: none;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .l-header__nav__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.l-header__nav__btn--bar {
+  border: 2px solid white;
+  border-radius: 9999px;
+}
+.l-header__nav__list {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .l-header__nav__list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    background-color: #0a0a0a;
+    opacity: 80%;
+    position: absolute;
+    top: 8rem;
+    right: -100%;
+    padding: 20vh 3rem;
+  }
+}
+.l-header__nav__list__item {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .l-header__nav__list__item {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid white;
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+}
+.l-header .open {
+  right: 0;
+}
+
+/* kv
+---------------------------------------------------------------- */
+.p-kv {
+  position: relative;
+}
+.p-kv--img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .p-kv--img {
+    height: 90vh;
+  }
+}
+.p-kv--title {
+  width: 95%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px #0a0a0a;
+  font-size: 6rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .p-kv--title {
+    font-size: 3rem;
+  }
+}
+
+/* info
+---------------------------------------------------------------- */
+#info {
+  background-color: white;
+}
+
+.p-info {
+  display: flex;
+  padding: 8rem 0;
+}
+.p-info--h2 {
+  width: 10rem;
+  writing-mode: vertical-lr;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.p-info__list:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.p-info__list__item--date {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.p-info__list__item--text {
+  font-size: 2rem;
+}
+.p-info--link {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
+/* guide
+--------------------------------------------------------------- */
+.p-guide--img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.p-guide__content {
+  padding: 3rem 5rem;
+  background-color: white;
+}
+.p-guide__content__title {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  margin-bottom: 1.5rem;
+}
+.p-guide__content__title--icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+}
+.p-guide__content__title--h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.p-guide__content__title--en {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.p-guide__content__block {
+  display: flex;
+}
+.p-guide__content__block__machine, .p-guide__content__block__roof {
+  margin-right: 20rem;
+}
+.p-guide__content__block__machine--title, .p-guide__content__block__roof--title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.p-guide__content__block__machine__list__item, .p-guide__content__block__roof__list__item {
+  list-style: square;
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+}
+.p-guide__content__block__machine__list__item:not(:last-child), .p-guide__content__block__roof__list__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* carwash
+--------------------------------------------------------------- */
+.p-carwash__header {
+  display: flex;
+}
+.p-carwash__header--img {
+  width: 80%;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-carwash__header--h2 {
+  width: 10rem;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.5rem;
+  margin-left: 8rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.p-carwash__point {
+  background-color: #4e403d;
+  padding: 5rem 0;
+  margin: 8rem 0;
+}
+.p-carwash__point__list {
+  display: flex;
+  justify-content: space-between;
+}
+.p-carwash__point__list__item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8rem;
+}
+.p-carwash__point__list__item:not(:last-child) {
+  border-right: 2px solid white;
+}
+.p-carwash__point__list__item * {
+  color: white;
+}
+.p-carwash__point__list__item--num {
+  position: relative;
+  width: 4.5rem;
+  height: 4rem;
+  font-size: 2.4rem;
+  background-color: purple;
+  text-align: center;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+.p-carwash__point__list__item--num:after {
+  display: block;
+  content: "";
+  width: 4.5rem;
+  border-top: 0;
+  border-right: 2.25rem solid transparent;
+  border-left: 2.25rem solid transparent;
+  border-bottom: 1.5rem solid purple;
+  transform: rotateX(180deg);
+  position: absolute;
+  bottom: -1.4rem;
+}
+.p-carwash__point__list__item--title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.p-carwash__point__list__item--text {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
