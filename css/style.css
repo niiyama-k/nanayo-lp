@@ -47,8 +47,12 @@ p {
   line-height: 2.4rem;
 }
 
+section {
+  padding: 5rem 0 8rem;
+}
+
 .l-container-fluid {
-  width: 75.10980966vw;
+  width: 85.3587115666vw;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -58,7 +62,7 @@ p {
 }
 
 .l-container {
-  width: 60.46852123vw;
+  width: 78.0380673499vw;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -69,6 +73,10 @@ p {
 
 .lineart {
   margin: 5rem 0;
+}
+
+.l-section--white {
+  background-color: white;
 }
 
 /* header
@@ -332,4 +340,130 @@ p {
 }
 .p-carwash__point__list__item--text {
   text-align: center;
+}
+.p-carwash__desc {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  margin-bottom: 5rem;
+}
+
+/* price
+--------------------------------------------------------------- */
+.p-price__header {
+  display: flex;
+}
+.p-price__header--img {
+  width: 80%;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-price__header--h2 {
+  width: 10rem;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.5rem;
+  margin-right: 8rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.p-price--desc {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem 0;
+}
+.p-price__content__table {
+  width: 100%;
+  margin: 0 auto;
+}
+.p-price__content__table--header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.p-price__content__table--data__list__item {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+}
+.p-price__content__table--data__list__item--num {
+  font-size: 3.6rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+.p-price__content__table--data__list__item--title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.p-price__content__table--data__list__cost {
+  height: 8rem;
+}
+.p-price__content__table--data__list__cost--price {
+  height: 100%;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 8rem;
+}
+.p-price__content__table--data__list__cost--price .yen {
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+}
+
+/* p-recommend
+--------------------------------------------------------------- */
+.p-recommend__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.p-recommend__content--img {
+  width: 15rem;
+  aspect-ratio: 1/1;
+  margin-right: 2rem;
+}
+.p-recommend__content__list__item {
+  display: flex;
+  align-items: center;
+}
+.p-recommend__content__list__item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.p-recommend__content__list__item--check {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+}
+.p-recommend__content__list__item--text {
+  font-size: 3.6rem;
+}
+.p-recommend__dl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.p-recommend__dl--download {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.p-recommend__dl--free {
+  display: block;
+  text-align: center;
+  font-size: 8rem;
+}
+.p-recommend__dl--arrow {
+  display: inline-block;
+  content: "";
+  border-right: 0;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: 2rem solid purple;
+}
+.p-recommend__dl--qr {
+  width: 20rem;
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=style.css.map */

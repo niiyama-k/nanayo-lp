@@ -296,4 +296,162 @@
       }
     }
   }
+
+  &__desc {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.6rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* price
+--------------------------------------------------------------- */
+
+.p-price {
+  &__header {
+    display: flex;
+    &--img {
+      width: 80%;
+      height: 50rem;
+      object-fit: cover;
+    }
+
+    &--h2 {
+      width: 10rem;
+      writing-mode: vertical-rl;
+      letter-spacing: 0.5rem;
+      margin-right: 8rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &--desc {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  &__content {
+    &__table {
+      width: 100%;
+      margin: 0 auto;
+      &--row {
+      }
+
+      &--header {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 1.5rem 0;
+      }
+
+      &--data {
+        &__list {
+          &__item {
+            display: flex;
+            align-items: center;
+            height: 8rem;
+            &--num {
+              font-size: 3.6rem;
+              padding: 1rem;
+              padding-right: 2rem;
+            }
+
+            &--title {
+              font-size: 1.8rem;
+              font-weight: bold;
+            }
+            &--text {
+            }
+          }
+
+          &__cost {
+            height: 8rem;
+            &--price {
+              height: 100%;
+              font-size: 2rem;
+              text-align: center;
+              line-height: 8rem;
+
+              .yen {
+                font-size: 1.2rem;
+                margin-left: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* p-recommend
+--------------------------------------------------------------- */
+
+.p-recommend {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    &--img {
+      width: 15rem;
+      aspect-ratio: 1/1;
+      margin-right: 2rem;
+    }
+    &__list {
+      &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 3.5rem;
+        }
+        &--check {
+          font-size: 3rem;
+          margin-right: 0.8rem;
+        }
+
+        &--text {
+          font-size: 3.6rem;
+        }
+      }
+    }
+  }
+
+  &__dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    &--download {
+      display: block;
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    &--free {
+      display: block;
+      text-align: center;
+      font-size: 8rem;
+    }
+
+    &--arrow {
+      display: inline-block;
+      content: "";
+      border-right: 0;
+      border-top: 2rem solid transparent;
+      border-bottom: 2rem solid transparent;
+      border-left: 2rem solid purple;
+    }
+
+    &--qr {
+      width: 20rem;
+      aspect-ratio: 1/1;
+    }
+  }
 }

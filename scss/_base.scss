@@ -45,8 +45,12 @@ p {
   line-height: 2.4rem;
 }
 
+section {
+  padding: 5rem 0 8rem;
+}
+
 .l-container-fluid {
-  width: 75.10980966vw;
+  width: 85.3587115666vw;
   margin: 0 auto;
 
   @include sp {
@@ -55,7 +59,7 @@ p {
 }
 
 .l-container {
-  width: 60.46852123vw;
+  width: 78.0380673499vw;
   margin: 0 auto;
 
   @include sp {
@@ -65,4 +69,8 @@ p {
 
 .lineart {
   margin: 5rem 0;
+}
+
+.l-section--white {
+  background-color: white;
 }
