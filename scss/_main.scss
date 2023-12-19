@@ -126,6 +126,7 @@
 .p-info {
   display: flex;
   padding: 8rem 0;
+
   &--h2 {
     width: 10rem;
     writing-mode: vertical-lr;
@@ -138,6 +139,7 @@
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
+
     &__item {
       &--date {
         display: block;
@@ -150,6 +152,7 @@
       }
     }
   }
+
   &--link {
     display: block;
     font-size: 1.4rem;
@@ -169,11 +172,13 @@
   &__content {
     padding: 3rem 5rem;
     background-color: white;
+
     &__title {
       display: flex;
       align-items: center;
       height: 6rem;
       margin-bottom: 1.5rem;
+
       &--icon {
         width: 3rem;
         height: 3rem;
@@ -198,10 +203,12 @@
       &__machine,
       &__roof {
         margin-right: 20rem;
+
         &--title {
           font-size: 2rem;
           margin-bottom: 1rem;
         }
+
         &__list {
           &__item {
             list-style: square;
@@ -224,6 +231,7 @@
 .p-carwash {
   &__header {
     display: flex;
+
     &--img {
       width: 80%;
       height: 50rem;
@@ -263,6 +271,7 @@
         * {
           color: white;
         }
+
         &--num {
           position: relative;
           width: 4.5rem;
@@ -286,10 +295,12 @@
             bottom: -1.4rem;
           }
         }
+
         &--title {
           text-align: center;
           margin-bottom: 1.5rem;
         }
+
         &--text {
           text-align: center;
         }
@@ -311,6 +322,7 @@
 .p-price {
   &__header {
     display: flex;
+
     &--img {
       width: 80%;
       height: 50rem;
@@ -338,8 +350,8 @@
     &__table {
       width: 100%;
       margin: 0 auto;
-      &--row {
-      }
+
+      &--row {}
 
       &--header {
         font-size: 2rem;
@@ -354,6 +366,7 @@
             display: flex;
             align-items: center;
             height: 8rem;
+
             &--num {
               font-size: 3.6rem;
               padding: 1rem;
@@ -364,12 +377,13 @@
               font-size: 1.8rem;
               font-weight: bold;
             }
-            &--text {
-            }
+
+            &--text {}
           }
 
           &__cost {
             height: 8rem;
+
             &--price {
               height: 100%;
               font-size: 2rem;
@@ -392,6 +406,12 @@
 --------------------------------------------------------------- */
 
 .p-recommend {
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__content {
     display: flex;
     justify-content: center;
@@ -403,20 +423,23 @@
       aspect-ratio: 1/1;
       margin-right: 2rem;
     }
+
     &__list {
       &__item {
         display: flex;
         align-items: center;
+
         &:not(:last-child) {
           margin-bottom: 3.5rem;
         }
+
         &--check {
           font-size: 3rem;
           margin-right: 0.8rem;
         }
 
         &--text {
-          font-size: 3.6rem;
+          font-size: 2.4rem;
         }
       }
     }
@@ -427,17 +450,18 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
     &--download {
       display: block;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 3rem;
     }
 
     &--free {
       display: block;
       text-align: center;
-      font-size: 8rem;
+      font-size: 6rem;
     }
 
     &--arrow {
@@ -453,5 +477,107 @@
       width: 20rem;
       aspect-ratio: 1/1;
     }
+  }
+}
+
+/* p-shop
+--------------------------------------------------------------- */
+.p-shop {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--img {
+      width: calc(50% - 5rem);
+      margin-left: 5rem;
+      aspect-ratio: 16/10;
+    }
+
+    &__desc {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--logo {
+        width: 100%;
+        aspect-ratio: 16/10;
+      }
+
+      &--address {
+        font-size: 2rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+/* p-contact
+--------------------------------------------------------------- */
+
+.p-contact {
+  background: #4e403d;
+
+  &--h2 {
+    color: white;
+  }
+
+  &__form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &--flex {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__label {
+      color: white;
+      width: 30%;
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+
+    &__input {
+      background-color: white;
+      width: 70%;
+      font-size: 2rem;
+      padding: 1.5rem;
+    }
+
+    &__area {
+      background-color: white;
+      width: 70%;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
+}
+
+/* l-footer
+--------------------------------------------------------------- */
+
+.l-footer {
+  padding: 3rem 0;
+
+  &--policy {
+    display: block;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &--copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
   }
 }

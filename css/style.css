@@ -413,6 +413,10 @@ section {
 
 /* p-recommend
 --------------------------------------------------------------- */
+.p-recommend__flex {
+  display: flex;
+  justify-content: space-between;
+}
 .p-recommend__content {
   display: flex;
   justify-content: center;
@@ -436,7 +440,7 @@ section {
   margin-right: 0.8rem;
 }
 .p-recommend__content__list__item--text {
-  font-size: 3.6rem;
+  font-size: 2.4rem;
 }
 .p-recommend__dl {
   display: flex;
@@ -447,13 +451,13 @@ section {
 .p-recommend__dl--download {
   display: block;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
 .p-recommend__dl--free {
   display: block;
   text-align: center;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 .p-recommend__dl--arrow {
   display: inline-block;
@@ -466,4 +470,89 @@ section {
 .p-recommend__dl--qr {
   width: 20rem;
   aspect-ratio: 1/1;
+}
+
+/* p-shop
+--------------------------------------------------------------- */
+.p-shop__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-shop__content--img {
+  width: calc(50% - 5rem);
+  margin-left: 5rem;
+  aspect-ratio: 16/10;
+}
+.p-shop__content__desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-shop__content__desc--logo {
+  width: 100%;
+  aspect-ratio: 16/10;
+}
+.p-shop__content__desc--address {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+/* p-contact
+--------------------------------------------------------------- */
+.p-contact {
+  background: #4e403d;
+}
+.p-contact--h2 {
+  color: white;
+}
+.p-contact__form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.p-contact__form--flex {
+  display: flex;
+}
+.p-contact__form--flex:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.p-contact__form__label {
+  color: white;
+  width: 30%;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.p-contact__form__input {
+  background-color: white;
+  width: 70%;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+.p-contact__form__area {
+  background-color: white;
+  width: 70%;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/* l-footer
+--------------------------------------------------------------- */
+.l-footer {
+  padding: 3rem 0;
+}
+.l-footer--policy {
+  display: block;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+.l-footer--copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
